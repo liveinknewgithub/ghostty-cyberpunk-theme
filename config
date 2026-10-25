@@ -1,0 +1,82 @@
+# This is the configuration file for Ghostty.
+#
+# This template file has been automatically created at the following
+# path since Ghostty couldn't find any existing config files on your system:
+#
+#   /Users/liveink/Library/Application Support/com.mitchellh.ghostty/config
+#
+# The template does not set any default options, since Ghostty ships
+# with sensible defaults for all options. Users should only need to set
+# options that they want to change from the default.
+#
+# Run `ghostty +show-config --default --docs` to view a list of
+# all available config options and their default values.
+#
+# Additionally, each config option is also explained in detail
+# on Ghostty's website, at https://ghostty.org/docs/config.
+
+# ============================================================
+# Cyberpunk, matched to the Herdr theme
+# (~/.config/herdr/config.toml, [theme.custom])
+# ============================================================
+
+# -- Background & Foreground --
+# Background = Herdr panel_bg, so panes, tab bar, and popups share one
+# backdrop; the Herdr sidebar sits a shade darker (#090118).
+background = #0d0221
+foreground = #e8fdff
+
+# -- Translucency --
+# Slightly see-through, frosted backdrop. On macOS, background-opacity only
+# changes after quitting and reopening Ghostty; a config reload is not enough.
+background-opacity = 0.92
+background-blur = 20
+# Herdr paints its sidebar, tab bar, and popups with explicit colors; without
+# this they would stay fully opaque while only the panes turn translucent.
+background-opacity-cells = true
+
+# -- Cursor (Herdr accent, neon cyan bar) --
+cursor-style = bar
+cursor-color = #00f0ff
+cursor-text = #0d0221
+
+# -- Selection (Herdr selection_bg) --
+# Ghostty requires RGB here; RGBA hex colors are not supported.
+selection-background = #4b0f6b
+selection-foreground = #e8fdff
+
+# -- ANSI Palette --
+# Normal colors are Herdr's neon tokens; bright colors are 35% white tints
+# of the same hue, except bright cyan (Herdr teal).
+# 0  black          (Herdr surface0)
+palette = 0=#1b0b3b
+# 1  red            (Herdr red, blocked)
+palette = 1=#ff003c
+# 2  green          (Herdr green, idle)
+palette = 2=#39ff88
+# 3  yellow         (Herdr yellow, working)
+palette = 3=#fcee0a
+# 4  blue           (Herdr blue)
+palette = 4=#2e9bff
+# 5  magenta        (Herdr mauve, hot magenta)
+palette = 5=#ff2bd6
+# 6  cyan           (Herdr accent, neon cyan)
+palette = 6=#00f0ff
+# 7  white          (Herdr subtext0)
+palette = 7=#b9c8f5
+# 8  bright black   (Herdr overlay0: comments, dim text)
+palette = 8=#7a5fc0
+# 9  bright red
+palette = 9=#ff5980
+# 10 bright green
+palette = 10=#7effb2
+# 11 bright yellow
+palette = 11=#fdf460
+# 12 bright blue
+palette = 12=#77beff
+# 13 bright magenta
+palette = 13=#ff75e4
+# 14 bright cyan    (Herdr teal, done)
+palette = 14=#00ffc6
+# 15 bright white
+palette = 15=#ffffff
